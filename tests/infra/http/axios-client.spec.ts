@@ -13,10 +13,7 @@ describe('AxiosHttpClient', () => {
     fakeAxios = axios as jest.Mocked<typeof axios>
     url = 'any_url'
     params = { any: 'any' }
-    fakeAxios.get.mockResolvedValue({
-      status: 200,
-      data: 'any_data'
-    })
+    fakeAxios.get.mockResolvedValue({ status: 200, data: 'any_data' })
   })
 
   beforeEach(() => {

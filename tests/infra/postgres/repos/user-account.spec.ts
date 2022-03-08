@@ -69,6 +69,7 @@ describe('PgUserAccountRepository', () => {
         name: 'new_name',
         facebookId: 'new_fb_id'
       })
+      expect(pgUser?.id).toBe(1)
     })
   })
 })

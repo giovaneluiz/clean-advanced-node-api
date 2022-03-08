@@ -49,7 +49,7 @@ describe('PgUserAccountRepository', () => {
       expect(pgUser?.id).toBe(1)
     })
 
-    it('shoul update an account if id is defined', async () => {
+    it('should update an account if id is defined', async () => {
       await pgUserRepo.save({
         email: 'any_email',
         name: 'any_name',
